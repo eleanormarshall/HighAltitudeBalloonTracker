@@ -1,0 +1,112 @@
+<DOCTYPE! html> 
+<html> 
+	<head> 
+		<title>Far Horizon's Balloon</title> 
+		<link rel="stylesheet" href="v4.2.0-dist/ol.css" type="text/css"> 
+		<link rel="stylesheet" href="StyleWnavbar.css" type="text/css"> 
+		<script src="v4.2.0-dist/ol.js"></script> 
+		<script src= "jquery-3.2.1.min.js"></script>
+		<script src="../highchartscode/highcharts.js"></script>
+		<script src="../highchartscode/modules/exporting.js"></script>
+	
+
+	</head>
+	<p>
+		<script src="v4.2.0-dist/ol.js"></script> 
+		<script src= "jquery-3.2.1.min.js"></script> 
+	</p>
+	<body> 
+
+		<div id="mySidenav" class="sidenav">
+
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    			<button class="dropbtn">Path Tracks</button>
+			<div class="navpanel" id="PathsDropdown">
+				<a href = #> 
+      					<input type="checkbox" id="kc9lig" name="kc9lig" onchange="KC9LIGtoggleLayer(KC9LIG)" checked/> 
+					<label id="kc9lig" for="kc9lig">KC9LIG</label>
+     				</a>
+				<a href = #> 	
+					<input type="checkbox" id="wb9sky" name="wb9sky" onchange="WB9SKYtoggleLayer(WB9SKY)" checked/>
+					<label id="wb9sky" for="wb9sky">WB9SKY</label> 
+				</a>
+				<a href = #> 	
+					<input type="checkbox" id="KC9LHW" name="KC9LHW" onchange="KC9LHWtoggleLayer(KC9LHW)" checked/>
+					<label id="KC9LHW" for="KC9LHW">KC9LHW</label> 
+				</a>
+			</div>
+  
+
+    			<button class="dropbtn">Graphs</button>
+			<div class="navpanel" id="GraphsDropdown">
+				<a href = #> 
+					<input type="checkbox" id="btn-full-screen" unchecked/>
+					<label id="graphsLabel" for="btn-full-screen">Display Graphs</label> 
+				</a>
+			</div>
+
+
+	
+			<button class = "dropbtn"> Current Positions </button> 
+			<div class = "navpanel"> 
+				<a href = #> 
+					<input type= "checkbox" id="currentPositions" name="currentPositions" unchecked/>
+					<label id="currentPos" for="currentPositions">Display Positions</label>
+				</a>
+			</div>
+
+
+			<button class = "dropbtn"> Predictions</button> 
+			<div class="navpanel" id="Predictions">
+				<a href = #> 	
+					<input type="checkbox" id="Predictions" name="Predictions" onchange="PredictionstoggleLayer(Predictions)" checked/>
+					<label id="Predictions" for="Predictions">Display Predictions</label> 
+					<form methond="post"> 
+						Venting Altitude:<br>
+						<input type="text" name="venting altitude">
+						<br> 
+						<input type="button" onclick="ventingparms();">submit </button>
+					</form>
+				</a>
+			</div>
+		</div>
+
+		<span style="font-size:20px;cursor:pointer; position: absolute; top: 80px; right: 30px; font-size: 18px;" onclick="openNav()">&#9776; Menu</span>
+
+
+		<div id= "parent"> 
+			<div id = "heading"></div> 
+			<div id = "panel" class = "full-panel">		
+				<div id="map" class="full-map"></div> 
+				<div id = "Graphs">
+					<div id = "Altitude"></div> 
+					// This is where you add more <div> to create additional graphs
+					//<div id="alerts-details"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id= "PositionsBox" class = "row list">
+			<ul class = "ngc">
+				<li class="col-xs-2 borders" style = "background-color: rgba(241, 170, 126, 0.68) ; position: absolute; bottom: 25px; left: 40px; width: 210px; height: 90px; font-size: 18px;">
+					<output type ="text" id="CurrentData">
+				</li>
+			</ul> 
+		</div>
+
+
+		<div id="mypostion"></div>
+
+		<div id="overlay" style = "background-color: white; border-radius: 2px; border: 1px solid black; padding: 2px 10px;">
+
+		//Javascript Files Used 
+		<script src = "AltGPS2.js"></script> 
+		<script src = "MapwithNav.js"></script> 
+		<script src = "mapfunctions2.js"></script>
+		<script src = "cleanpaths.js"></script> 
+		<script src = "navbar.js"></script>
+		//<script src = "Predictions.js"></script>
+	</body> 
+</html> 
+

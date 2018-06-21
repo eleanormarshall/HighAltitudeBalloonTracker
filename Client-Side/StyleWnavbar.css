@@ -1,0 +1,197 @@
+body{ 
+	background-image: url("adler10.png"); 
+	background-repeat: no-repeat;
+	background-size: 1250px 100px; 
+    	background-position: left top;
+	margin-top: 100px; 
+	background-color: white; 
+	} 
+
+div { 
+	background-color:white; color: black; 
+	} 
+
+#parent {
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+ }
+ 
+ #heading {
+   position: relative;
+   height: 1%;
+   width: inherit;
+ }
+ 
+ .simple-panel {
+   position: relative;
+   height: 100%;
+   width: inherit;
+ }
+ 
+ .full-panel {
+   position: relative;
+   height: 100%;
+   width: inherit;
+ }
+ 
+ .simple-map {
+   border-style: solid;
+   border-width: 1px;
+   position: relative;
+   height: 100%;
+   width: 60%;
+ }
+ 
+ 
+ .full-map {
+   height: 100%;
+   width: 100%;
+ }
+ 
+ #Graphs {
+   border-style: solid;
+   border-width: 1px;
+   position: absolute;
+   top: 0%;
+   right: 0%;
+   margin: 0% 1% 0% 0%;
+   height: 100%;
+   width: 37%;
+ }
+ 
+ #Altitude {
+   top: 0%;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+ }
+ 
+ //#alerts-details {
+ //  top: 50%;
+ //  position: absolute;
+ //  height: 0%;
+ //  width: 100%;
+ //}	
+
+.block{
+	height:400px; 
+	} 
+.list ul li{
+	display: inline-block; 
+	margin-left: 0px; 
+	margin-right:8%; 
+	margin-top:10px; 
+	margin-bottom:10px; 
+} 
+.borders{
+	border-radius: 5px 5px 5px 5px; 
+	-moz-border-radius: 5px 5px 5px 5px; 
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border:1px solid #000000; 
+	} 
+
+.sidenav {
+	position: fixed;
+	top: 0%;
+	right: 0%;
+	height: 100%;
+	z-index: 1; 
+    	background-color: black;
+    	overflow-x: hidden;
+    	transition: 0.5s;
+    	padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    background-color: black; 
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px; 
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+
+.btn-full-screen, .btn-partial-screen {
+
+ }
+ 
+
+ .show-Positions, .hide-Positions, .hide-predictions, .show-predictions {
+}
+
+
+.dropbtn {
+    cursor: pointer;
+    font-size: 20px;   
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    border : none;
+    background-color: black;  
+}
+
+.dropbtn.active, .dropbtn:hover {
+    background-color: rgb(252, 200, 49);
+    padding: 8px 8px 8px 32px;
+	 
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.navpanel {
+    display: none;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navpanel a {
+    float: none;
+    color: #818181;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navpanel a:hover {
+    background-color: black;
+}
+
+.show {
+    display: block;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+
+
+ .nothing {
+    cursor: pointer;
+    font-size: 16px;   
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    border : none;
+    background-color: black;
+}
