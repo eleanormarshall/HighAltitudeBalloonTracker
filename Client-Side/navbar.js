@@ -1,3 +1,4 @@
+//creattes the functions for the navigation bar and adds the functions to the buttons in the navigation bar 
 
 $("#PositionsBox").hide();
 
