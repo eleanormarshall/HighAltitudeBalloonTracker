@@ -1,6 +1,8 @@
 
 //MapLayer
 
+//Intiates and adds the different sizes to map, graphs, and naviagtion bar. If Graphs are turned on, map size will change etc. 
+
  $("#Graphs").hide();
 
 var map;
@@ -45,6 +47,7 @@ var map;
 
 
 
+//intiates the map layer 
 function Map_init(){ 
 
 	var MapLayer= new ol.layer.Tile({ 
@@ -53,6 +56,7 @@ function Map_init(){
 		})
 		}); 
 
+	//defines possible starting coordinates 	
 	var PerryvilleLonLat  = [-89.86, 37.86];  
 
 	var KankakeeLonLat= [-87.86, 41.12]; 
@@ -60,12 +64,14 @@ function Map_init(){
 	var KankakeeWebMercator= ol.proj.fromLonLat(KankakeeLonLat);
 
 	var PerryvilleWebMercator = ol.proj.fromLonLat(PerryvilleLonLat);
-
+	
+	//sets the map view 
 	var view = new ol.View({ 
 		center:KankakeeWebMercator, 
 		zoom:12
 		}); 
 
+	//adds the different layers to the map 
 	map = new ol.Map({ 
 		target:'map', 
 		layers: [MapLayer, GPS, WB9SKY, KC9LHW, KC9LIG, Predictions],
