@@ -1,4 +1,4 @@
-//Creates Prediction Paths 
+//Creates Prediction Paths this file is almost indentical to the cleanpaths.js file.  
 
 function getPaths(url, callback){ 
 	var client = new XMLHttpRequest(); 
